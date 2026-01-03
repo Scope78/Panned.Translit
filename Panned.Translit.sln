@@ -1,0 +1,77 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36705.20
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panned.Translit.CodeGenerator", "Panned.Translit.CodeGenerator\Panned.Translit.CodeGenerator.csproj", "{A6115E5C-2A82-44AC-9132-29DE71CA9FEF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "xml", "xml", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		xml\ala-lc_rus.xml = xml\ala-lc_rus.xml
+		xml\bgn-pcgn_rus_standard.xml = xml\bgn-pcgn_rus_standard.xml
+		xml\bgn-pcgn_rus_strict.xml = xml\bgn-pcgn_rus_strict.xml
+		xml\common_ara.xml = xml\common_ara.xml
+		xml\common_ces.xml = xml\common_ces.xml
+		xml\common_deu.xml = xml\common_deu.xml
+		xml\common_pol.xml = xml\common_pol.xml
+		xml\common_ron.xml = xml\common_ron.xml
+		xml\common_slk.xml = xml\common_slk.xml
+		xml\common_slv.xml = xml\common_slv.xml
+		xml\devanagari_iast.xml = xml\devanagari_iast.xml
+		xml\din_1460_bul.xml = xml\din_1460_bul.xml
+		xml\din_1460_rus.xml = xml\din_1460_rus.xml
+		xml\din_1460_ukr.xml = xml\din_1460_ukr.xml
+		xml\din_31634.xml = xml\din_31634.xml
+		xml\gost_7-79_rus.xml = xml\gost_7-79_rus.xml
+		xml\gost_7-79_rus_old.xml = xml\gost_7-79_rus_old.xml
+		xml\gost_7-79_ukr.xml = xml\gost_7-79_ukr.xml
+		xml\greeklish.xml = xml\greeklish.xml
+		xml\iast_devanagari.xml = xml\iast_devanagari.xml
+		xml\iso-r_9.xml = xml\iso-r_9.xml
+		xml\iso_843.xml = xml\iso_843.xml
+		xml\iso_8859-16_ron.xml = xml\iso_8859-16_ron.xml
+		xml\iso_9.xml = xml\iso_9.xml
+		xml\streamlined_system_bul.xml = xml\streamlined_system_bul.xml
+		xml\template.xml = xml\template.xml
+		xml\translit.dtd = xml\translit.dtd
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panned.Translit", "Panned.Translit\Panned.Translit.csproj", "{583FBC54-8749-4694-8478-145DA9A67D2B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A6115E5C-2A82-44AC-9132-29DE71CA9FEF} = {A6115E5C-2A82-44AC-9132-29DE71CA9FEF}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panned.Translit.Contracts", "Panned.Translit.Contracts\Panned.Translit.Contracts.csproj", "{18A6967C-C08D-4765-A22D-C499D37D39FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6115E5C-2A82-44AC-9132-29DE71CA9FEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6115E5C-2A82-44AC-9132-29DE71CA9FEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6115E5C-2A82-44AC-9132-29DE71CA9FEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6115E5C-2A82-44AC-9132-29DE71CA9FEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{583FBC54-8749-4694-8478-145DA9A67D2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{583FBC54-8749-4694-8478-145DA9A67D2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{583FBC54-8749-4694-8478-145DA9A67D2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{583FBC54-8749-4694-8478-145DA9A67D2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18A6967C-C08D-4765-A22D-C499D37D39FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18A6967C-C08D-4765-A22D-C499D37D39FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18A6967C-C08D-4765-A22D-C499D37D39FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18A6967C-C08D-4765-A22D-C499D37D39FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6E249FC7-C3AE-4526-A030-8358B2F81A1F}
+	EndGlobalSection
+EndGlobal
