@@ -29,9 +29,7 @@ namespace Panned.Translit.CodeGenerator
 
                 using var streamWriter = new StreamWriter(Path.Combine(_codeOutputPath, $"{className}.cs"), false, Encoding.UTF8);
 
-                streamWriter.Write($@"using System;
-using System.Text.RegularExpressions;
-using System.IO;
+                streamWriter.Write($@"using System.Text.RegularExpressions;
 using Panned.Translit.Contracts;
 
 namespace Panned.Translit;
@@ -64,7 +62,7 @@ public partial class {className} : TranslitBase
                 if (!compiler.IsReversable)
                 {
                     streamWriter.Write(@"
-        throw new InvalidOperationException(""Not reversable"");");
+        throw new NotReversableException();");
                 }
                 else
                 {
@@ -110,14 +108,13 @@ public partial class {className} : TranslitBase
 
             using var streamWriterFactory = new StreamWriter(Path.Combine(_codeOutputPath, "TranslitFactory.cs"), false, Encoding.UTF8);
 
-            streamWriterFactory.Write(@"using System;
-using Panned.Translit.Contracts;
+            streamWriterFactory.Write(@"using Panned.Translit.Contracts;
 
 namespace Panned.Translit;
 
-public class TranslitFactory
+public class TranslitFactory : ITranslitFactory
 {
-    public static ITranslit Create(Transliteration transliteration)
+    public ITranslit Create(Transliteration transliteration)
     {
         switch(transliteration)
         {");

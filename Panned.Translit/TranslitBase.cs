@@ -2,6 +2,9 @@
 
 namespace Panned.Translit;
 
+/// <summary>
+///     Abstract base class for Translit
+/// </summary>
 public abstract class TranslitBase : ITranslit
 {
     public abstract Transliteration Transliteration { get; }
@@ -24,7 +27,7 @@ public abstract class TranslitBase : ITranslit
     {
         if (!IsReversable)
         {
-            throw new InvalidOperationException("Not reversable");
+            throw new NotReversableException();
         }
 
         while (!input.EndOfStream)

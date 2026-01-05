@@ -49,6 +49,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panned.Translit", "Panned.T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panned.Translit.Contracts", "Panned.Translit.Contracts\Panned.Translit.Contracts.csproj", "{18A6967C-C08D-4765-A22D-C499D37D39FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panned.Translit.Tests", "Panned.Translit.Tests\Panned.Translit.Tests.csproj", "{C4531D72-8561-48B5-9CAC-DA50EF0EAF72}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +69,10 @@ Global
 		{18A6967C-C08D-4765-A22D-C499D37D39FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18A6967C-C08D-4765-A22D-C499D37D39FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18A6967C-C08D-4765-A22D-C499D37D39FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4531D72-8561-48B5-9CAC-DA50EF0EAF72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4531D72-8561-48B5-9CAC-DA50EF0EAF72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4531D72-8561-48B5-9CAC-DA50EF0EAF72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4531D72-8561-48B5-9CAC-DA50EF0EAF72}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

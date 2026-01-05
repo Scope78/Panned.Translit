@@ -1,11 +1,10 @@
-﻿using System;
-using Panned.Translit.Contracts;
+﻿using Panned.Translit.Contracts;
 
 namespace Panned.Translit;
 
-public class TranslitFactory
+public class TranslitFactory : ITranslitFactory
 {
-    public static ITranslit Create(Transliteration transliteration)
+    public ITranslit Create(Transliteration transliteration)
     {
         switch(transliteration)
         {

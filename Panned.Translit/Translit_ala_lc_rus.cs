@@ -1,6 +1,4 @@
-﻿using System;
-using System.Text.RegularExpressions;
-using System.IO;
+﻿using System.Text.RegularExpressions;
 using Panned.Translit.Contracts;
 
 namespace Panned.Translit;
@@ -100,7 +98,7 @@ public partial class Translit_ala_lc_rus : TranslitBase
 
     public override string Reverse(string input)
     {
-        throw new InvalidOperationException("Not reversable");
+        throw new NotReversableException();
     }
               
     [GeneratedRegex(@"А")]
